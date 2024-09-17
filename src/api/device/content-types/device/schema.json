@@ -4,7 +4,8 @@
   "info": {
     "singularName": "device",
     "pluralName": "devices",
-    "displayName": "device"
+    "displayName": "Device",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -12,9 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "serial": {
-      "type": "biginteger",
+      "type": "text",
       "unique": true,
       "required": true
+    },
+    "usuario": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::usuario.usuario",
+      "inversedBy": "devices"
     }
   }
 }
