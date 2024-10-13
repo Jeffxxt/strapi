@@ -22,6 +22,10 @@
       "relation": "manyToOne",
       "target": "api::usuario.usuario",
       "inversedBy": "devices"
+    },
+    "name": {
+      "type": "string",
+      "default": "device"
     }
   }
 }
